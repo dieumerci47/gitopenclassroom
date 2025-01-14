@@ -1,4 +1,27 @@
-{
-  "nom": "dieu",
-  "age": 23
-}
+[
+  {
+    "nom": "Jean Dupont",
+    "age": 28,
+    "email": "jean.dupont@example.com"
+  },
+  {
+    "nom": "Marie Curie",
+    "age": 35,
+    "email": "marie.curie@example.com"
+  },
+  {
+    "nom": "Ahmed Benali",
+    "age": 22,
+    "email": "ahmed.benali@example.com"
+  },
+  {
+    "nom": "Sophia Wang",
+    "age": 30,
+    "email": "sophia.wang@example.com"
+  },
+  {
+    "nom": "Carlos Gomez",
+    "age": 27,
+    "email": "carlos.gomez@example.com"
+  }
+]
