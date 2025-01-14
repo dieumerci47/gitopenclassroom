@@ -23,5 +23,10 @@
     "nom": "Carlos Gomez",
     "age": 27,
     "email": "carlos.gomez@example.com"
+  },
+  {
+    "nom": "dieumerci",
+    "email": "dieu",
+    "age": 22
   }
 ]

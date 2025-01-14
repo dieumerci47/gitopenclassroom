@@ -1,3 +1,15 @@
+@media (forced-colors: active) {
+  /* Styles spécifiques pour le mode couleurs forcées */
+  body {
+    background-color: Window;
+    color: WindowText;
+  }
+}
+.element {
+  forced-color-adjust: none; /* Empêche l'ajustement des couleurs forcées */
+  background-color: Canvas;
+  color: CanvasText;
+}
 * {
   margin: 0; /* Reset the default margin */
 }
