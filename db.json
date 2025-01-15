@@ -1,37 +1,20 @@
 [
   {
-    "nom": "Jean Dupont",
-    "age": 28,
-    "email": "jean.dupont@example.com"
-  },
-  {
+    "id": 2,
     "nom": "Marie Curie",
-    "age": 35,
+    "age": 30,
     "email": "marie.curie@example.com"
   },
   {
-    "nom": "Ahmed Benali",
+    "id": 3,
+    "nom": "Paul Durand",
+    "age": 28,
+    "email": "paul.durand@example.com"
+  },
+  {
+    "id": 4,
+    "nom": "Alice Martin",
     "age": 22,
-    "email": "ahmed.benali@example.com"
-  },
-  {
-    "nom": "Sophia Wang",
-    "age": 30,
-    "email": "sophia.wang@example.com"
-  },
-  {
-    "nom": "Carlos Gomez",
-    "age": 27,
-    "email": "carlos.gomez@example.com"
-  },
-  {
-    "nom": "dieumerci",
-    "email": "dieu",
-    "age": 22
-  },
-  {
-    "nom": "dauriane",
-    "email": "dodo",
-    "age": 29
+    "email": "alice.martin@example.com"
   }
 ]

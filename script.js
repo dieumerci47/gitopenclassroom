@@ -9,8 +9,22 @@ let fetchData = async () => {
   let body = document.querySelector("body");
   for (let i = 0; i < Users.length; i++) {
     let li = document.createElement("li");
+    let deletes = document.createElement("button");
     li.textContent = Users[i].nom;
+    deletes.textContent = "Supprimer";
+    deletes.value = Users[i].id;
+    deletes.addEventListener("click", async () => {
+      await fetch("http://localhost:3001/del/" + deletes.value, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+      });
+      window.location.reload();
+    });
     Liste.appendChild(li);
+    Liste.appendChild(deletes);
   }
   body.appendChild(Liste);
   let buttonEnvoyer = document.getElementById("envoyer");
@@ -24,7 +38,7 @@ let fetchData = async () => {
       email: inputEmail.value,
       age: inputAge.value,
     };
-    await fetch("http://localhost:8080/db.json", {
+    await fetch("http://localhost:3001/add", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -35,7 +49,7 @@ let fetchData = async () => {
         age: data.age,
       }),
     });
-    console.log(inputNom.value, inputEmail.value, inputAge.value);
+    window.location.reload();
   });
   return data;
 };
